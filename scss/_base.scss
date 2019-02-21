@@ -2,4 +2,14 @@ body {
 	background-color: $newcolor;
 	font-family: $basefont;
 
+
+}
+
+a {
+	padding: 1em;
+}
+
+.nav {
+	text-align: center;
+	@include box;
 }
