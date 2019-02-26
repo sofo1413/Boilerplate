@@ -612,15 +612,15 @@ a {
 .site {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: .25fr .25fr .5fr .25fr;
+  grid-template-rows: .25fr, .5fr, .5fr, .25fr;
   grid-template-areas: "title title" "nav nav" "main main" "foot foot";
 }
 
 @media screen and (min-width: 1200px) {
   .site {
     display: grid;
-    grid-template-columns: 1fr, 2fr;
-    grid-template-areas: "title title" "nav main" "foot foot";
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "title title title title" "nav main main main" "foot foot foot foot";
   }
 
   nav a {
